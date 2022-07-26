@@ -120,7 +120,7 @@ return {
     TSConstBuiltin = {fg = c.fg1},
     TSConstMacro = {fg = c.fg1},
     TSConstructor = {fg = c.violet},
-    -- TSError = {style = undercurl}'
+    -- TSError = {style = undercurl},
     -- TSException = {},
     -- TSFloat = {},
     -- TSFunction = {},
