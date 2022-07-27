@@ -48,7 +48,7 @@ return {
     SpecialKey = {fg = c.bg3},
     Directory = {fg = c.cyan},
     Title = {fg = c.violet},
-    ErrorMsg = {bg = c.red},
+    ErrorMsg = {fg = c.bg1, bg = c.red},
     ModeMsg = {fg = c.fg2},
     -- MsgArea = {},
     -- MsgSeparator = {},
