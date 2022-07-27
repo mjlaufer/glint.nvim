@@ -2,7 +2,7 @@
 
 Glint is a minimal, high-contrast dark theme for Neovim. It uses the following four colors:
 
-1. Violet - functions and classes/constructors
+1. Violet - functions and classes (lightened and bold for the `return` keyword)
 2. Cyan - comments
 3. Green - strings (darkened for escape characters and regex)
 4. Magenta - primitive values (non-string)

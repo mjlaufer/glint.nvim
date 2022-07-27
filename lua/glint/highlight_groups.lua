@@ -130,7 +130,7 @@ return {
     -- TSKeyword = {},
     TSKeywordFunction = {fg = c.fg2},
     -- TSKeywordOperator = {},
-    TSKeywordReturn = {fg = c.fg1, style = bold},
+    TSKeywordReturn = {fg = c.lightViolet, style = bold},
     -- TSLabel = {},
     -- TSMethod = {},
     TSNamespace = {fg = c.fg1},
