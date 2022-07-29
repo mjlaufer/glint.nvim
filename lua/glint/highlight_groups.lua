@@ -117,7 +117,7 @@ return {
     -- TSComment = {},
     -- TSConditional = {},
     -- TSConstant = {},
-    TSConstBuiltin = {fg = c.fg1},
+    TSConstBuiltin = {fg = c.magenta},
     TSConstMacro = {fg = c.fg1},
     TSConstructor = {fg = c.violet},
     -- TSError = {style = undercurl},
