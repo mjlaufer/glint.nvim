@@ -15,14 +15,14 @@ return {
     CursorLine = {bg = c.bg1},
     Normal = {fg = c.fg1, bg = c.bg1}, -- Normal text
     NormalFloat = {bg = c.bg2}, -- Normal text in floating windows
-    FloatBorder = {fg = c.fg2, bg = c.bg1},
+    FloatBorder = {fg = c.violet, bg = c.bg1},
     -- NormalNC = {},
     -- TermCursor = {},
     -- TermCursorNC = {},
     VertSplit = {fg = c.bg3},
     LineNr = {fg = c.fg3},
     CursorLineNr = {fg = c.violet},
-    Folded = {fg = c.fg3, bg = c.bg1},
+    Folded = {fg = c.fg3, bg = c.bg2},
     FoldColumn = {fg = c.bg3},
     SignColumn = {fg = c.bg3},
     Pmenu = {bg = c.bg2},
@@ -35,8 +35,8 @@ return {
     TabLine = {bg = c.bg2, fg = c.fg2},
     TabLineFill = {bg = c.bg2},
     TabLineSel = {bg = c.bg2},
-    MatchParen = {fg = c.yellow, bg = c.bg3},
-    Substitute = {fg = c.bg1, bg = c.violet},
+    MatchParen = {fg = c.orange, bg = c.bg3},
+    Substitute = {fg = c.bg1, bg = c.orange},
     Search = {bg = c.bg3},
     IncSearch = {bg = c.bg3},
     Visual = {bg = c.bg3},
@@ -54,7 +54,7 @@ return {
     -- MsgSeparator = {},
     MoreMsg = {fg = c.blue},
     WarningMsg = {fg = c.red},
-    Question = {fg = c.yellow},
+    Question = {fg = c.green},
 
     ---- :help diff -------------------------------------------
     DiffAdd = {bg = c.diffGreen},
@@ -92,7 +92,7 @@ return {
     -- Macro = {},
     -- PreCondit = {},
 
-    Type = {fg = c.fg1},
+    Type = {fg = c.fg2},
     -- StorageClass = {},
     -- Structure = {},
     -- Typedef = {},
@@ -130,8 +130,9 @@ return {
     -- TSKeyword = {},
     TSKeywordFunction = {fg = c.fg2},
     -- TSKeywordOperator = {},
-    TSKeywordReturn = {fg = c.lightViolet, style = bold},
+    TSKeywordReturn = {fg = c.fg1, style = bold},
     -- TSLabel = {},
+    jsonTSLabel = {fg = c.fg1},
     -- TSMethod = {},
     TSNamespace = {fg = c.fg1},
     -- TSNone = {},
@@ -240,6 +241,7 @@ return {
     TelescopePreviewBorder = {fg = c.fg2, bg = c.bg1},
     TelescopePreviewNormal = {bg = c.bg1},
     TelescopeSelection = {bg = c.bg3},
+    TelescopeMatching = {fg = c.orange},
 
     ---- :h gitsigns (external plugin) -------------------------
     GitSignsAdd = {fg = c.green},
@@ -251,9 +253,9 @@ return {
     NvimTreeRootFolder = {fg = c.violet},
     NvimTreeFolderName = {fg = c.cyan},
     NvimTreeFolderIcon = {fg = c.cyan},
-    NvimTreeOpenedFolderName = {fg = c.magenta},
+    NvimTreeOpenedFolderName = {fg = c.orange},
     NvimTreeExecFile = {fg = c.yellow},
-    NvimTreeSpecialFile = {fg = c.violet},
+    NvimTreeSpecialFile = {fg = c.magenta},
     NvimTreeGitDirty = {fg = c.red},
     NvimTreeGitStaged = {fg = c.green},
     NvimTreeGitRenamed = {fg = c.green},
@@ -261,11 +263,11 @@ return {
     NvimTreeWindowPicker = {fg = c.bg1, bg = c.violet},
 
     ---- nvim-cmp (external plugin) ----------------------------
-    CmpItemAbbrMatch = {fg = c.green},
-    CmpItemAbbrMatchFuzzy = {fg = c.yellow},
+    CmpItemAbbrMatch = {fg = c.orange},
+    CmpItemAbbrMatchFuzzy = {fg = c.orange},
     CmpItemKindMenu = {fg = c.green},
     CmpItemKindText = {fg = c.fg2},
-    CmpItemKindKeyword = {fg = c.fg1},
+    CmpItemKindKeyword = {fg = c.fg2},
     CmpItemKindVariable = {fg = c.fg1},
     CmpItemKindValue = {fg = c.magenta},
     CmpItemKindConstant = {fg = c.fg1},
@@ -274,7 +276,7 @@ return {
     CmpItemKindMethod = {fg = c.violet},
     CmpItemKindReference = {fg = c.fg1},
     CmpItemKindClass = {fg = c.fg1},
-    CmpItemKindInterface = {fg = c.fg1},
+    CmpItemKindInterface = {fg = c.fg2},
     CmpItemKindStruct = {fg = c.fg1},
     CmpItemKindFolder = {fg = c.cyan},
     CmpItemKindFile = {fg = c.cyan},
@@ -282,7 +284,7 @@ return {
     ---- neotest (external plugin) -----------------------------
     NeotestAdapterName = {fg = c.violet},
     NeotestDir = {fg = c.blue},
-    NeotestRunning = {fg = c.yellow},
+    NeotestRunning = {fg = c.orange},
     NeotestPassed = {fg = c.green},
     NeotestFailed = {fg = c.red},
     NeotestSkipped = {fg = c.yellow},
@@ -315,6 +317,6 @@ return {
     DapUIBreakpointsCurrentLine = {fg = c.yellow, style = bold},
 
     ---- :h sneak (external plugin) ----------------------------
-    Sneak = {fg = c.bg1, bg = c.magenta},
+    Sneak = {fg = c.bg1, bg = c.orange},
     SneakScope = {bg = c.bg3},
 }
