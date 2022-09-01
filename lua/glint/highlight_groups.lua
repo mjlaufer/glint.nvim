@@ -250,10 +250,10 @@ return {
     GitSignsCurrentLineBlame = {fg = c.fg3},
 
     ---- :h nvim-tree (external plugin) ------------------------
-    NvimTreeRootFolder = {fg = c.violet},
+    NvimTreeRootFolder = {fg = c.fg2},
     NvimTreeFolderName = {fg = c.cyan},
     NvimTreeFolderIcon = {fg = c.cyan},
-    NvimTreeOpenedFolderName = {fg = c.orange},
+    NvimTreeOpenedFolderName = {fg = c.violet},
     NvimTreeExecFile = {fg = c.yellow},
     NvimTreeSpecialFile = {fg = c.magenta},
     NvimTreeGitDirty = {fg = c.red},
