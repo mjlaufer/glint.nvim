@@ -1,11 +1,6 @@
 # Glint
 
-Glint is a minimal, high-contrast dark theme for Neovim. It uses four colors for syntax highlighting:
-
-1. Violet - functions and classes
-2. Cyan - comments
-3. Green - strings (darkened for escape characters and regex)
-4. Magenta - primitive values (non-string)
+Glint is a minimal dark theme for Neovim.
 
 This project includes themes for [lualine](https://github.com/nvim-lualine/lualine.nvim) and [Kitty](https://sw.kovidgoyal.net/kitty/).
 
