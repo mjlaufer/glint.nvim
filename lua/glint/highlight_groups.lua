@@ -75,7 +75,7 @@ return {
     String = {fg = c.green},
     Character = {fg = c.green},
     Constant = {fg = c.magenta},
-    Number = {fg = c.fg1},
+    Number = {fg = c.magenta},
     Float = {fg = c.fg1},
     Boolean = {fg = c.fg2},
     Operator = {fg = c.fg2},

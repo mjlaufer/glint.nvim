@@ -15,7 +15,7 @@ return {
     darkGreen = hsluv(128, 30, 60), -- #779978
     cyan = hsluv(190, 50, 72), -- #81bbb9
     darkCyan = hsluv(190, 40, 58), -- #6e9291
-    blue = hsluv(248, 60, 64), -- #719ed8
+    blue = hsluv(248, 50, 64), -- #7a9dce
     magenta = hsluv(340, 60, 72), -- #e39cbd
     darkMagenta = hsluv(340, 45, 58), -- #c7709b
 
