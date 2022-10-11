@@ -71,14 +71,14 @@ return {
     ---- :help group-name --------------------------------------
     Identifier = {fg = c.fg1}, -- (preferred) any variable name
     Comment = {fg = c.darkGreen},
-    Function = {fg = c.fg1},
+    Function = {fg = c.fg2},
     String = {fg = c.green},
     Character = {fg = c.green},
     Constant = {fg = c.fg1},
     Number = {fg = c.magenta},
-    Float = {fg = c.fg1},
-    Boolean = {fg = c.fg2},
-    Operator = {fg = c.fg2},
+    Float = {fg = c.magenta},
+    Boolean = {fg = c.fg3},
+    Operator = {fg = c.fg1},
     Statement = {fg = c.fg3}, -- (preferred) any statement
     Conditional = {fg = c.fg3}, -- if, then, else, etc.
     Repeat = {fg = c.fg3}, -- for, do, while, etc.
@@ -92,7 +92,7 @@ return {
     -- Macro = {},
     -- PreCondit = {},
 
-    Type = {fg = c.darkCyan},
+    Type = {fg = c.cyan},
     -- StorageClass = {},
     -- Structure = {},
     -- Typedef = {},
@@ -137,9 +137,9 @@ return {
     TSNamespace = {fg = c.fg1},
     -- TSNone = {},
     -- TSNumber = {},
-    TSOperator = {fg = c.fg2},
-    TSParameter = {fg = c.cyan},
-    TSParameterReference = {fg = c.cyan},
+    TSOperator = {fg = c.fg1},
+    TSParameter = {fg = c.fg1},
+    TSParameterReference = {fg = c.fg1},
     -- TSProperty = {},
     TSPunctDelimiter = {fg = c.fg3},
     TSPunctBracket = {fg = c.fg2},
@@ -275,9 +275,9 @@ return {
     CmpItemKindFunction = {fg = c.fg1},
     CmpItemKindMethod = {fg = c.fg1},
     CmpItemKindReference = {fg = c.fg2},
-    CmpItemKindClass = {fg = c.darkCyan},
-    CmpItemKindInterface = {fg = c.darkCyan},
-    CmpItemKindStruct = {fg = c.darkCyan},
+    CmpItemKindClass = {fg = c.cyan},
+    CmpItemKindInterface = {fg = c.cyan},
+    CmpItemKindStruct = {fg = c.cyan},
     CmpItemKindFolder = {fg = c.blue},
     CmpItemKindFile = {fg = c.fg2},
 
