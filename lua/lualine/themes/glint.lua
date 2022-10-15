@@ -2,8 +2,8 @@ local c = require('glint.colors')
 
 return {
     normal = {
-        a = {bg = c.fg1, fg = c.bg1, gui = 'bold'},
-        b = {bg = c.bg1, fg = c.fg1},
+        a = {bg = c.fg2, fg = c.bg1, gui = 'bold'},
+        b = {bg = c.bg1, fg = c.fg2},
         c = {bg = c.bg2, fg = c.fg2},
     },
     insert = {a = {bg = c.magenta, fg = c.bg1, gui = 'bold'}, b = {bg = c.bg1, fg = c.magenta}},
