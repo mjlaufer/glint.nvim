@@ -319,4 +319,9 @@ return {
     ---- :h sneak (external plugin) ----------------------------
     Sneak = {fg = c.bg1, bg = c.yellowBright},
     SneakScope = {bg = c.bg3},
+
+    ---- vim-illuminate (external plugin) ----------------------
+    IlluminatedWordText = {bg = c.bg3},
+    IlluminatedWordRead = {bg = c.bg3},
+    IlluminatedWordWrite = {bg = c.bg3},
 }
