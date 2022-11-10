@@ -2,6 +2,8 @@
 
 Glint is a minimal dark theme for Neovim (v0.6 and higher).
 
+![Screen Shot 2022-11-10 at 3 56 57 PM](https://user-images.githubusercontent.com/24204252/201230833-bbf4ddc0-ff59-472a-813d-f0e1d3228c9a.png)
+
 This project includes themes for [lualine](https://github.com/nvim-lualine/lualine.nvim) and [Kitty](https://sw.kovidgoyal.net/kitty/).
 
 Supported plugins:
