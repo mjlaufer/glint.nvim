@@ -83,7 +83,7 @@ return {
     Conditional = {fg = c.fg2}, -- if, then, else, etc.
     Repeat = {fg = c.fg2}, -- for, do, while, etc.
     Exception = {fg = c.fg2}, -- try, catch, throw
-    -- Label = {}, -- case, default, etc.
+    Label = {fg = c.fg1},
     -- Keyword = {}, -- any other keyword
 
     PreProc = {fg = c.fg2}, -- (preferred) generic Preprocessor
@@ -123,16 +123,15 @@ return {
     -- TSError = {style = undercurl},
     -- TSException = {},
     -- TSFloat = {},
-    -- TSFunction = {},
+    ['@function'] = {fg = c.fg0},
     -- TSFuncBuiltin = {},
-    -- TSFuncMacro = {},
+    ['@function.macro'] = {fg = c.fg0},
     -- TSInclude = {},
     -- TSKeyword = {},
     -- TSKeywordFunction = {},
     ['@keyword.operator'] = {fg = c.magenta},
     -- ['@keyword.return'] = {},
-    -- TSLabel = {},
-    jsonTSLabel = {fg = c.fg1},
+    ['@label'] = {fg = c.fg1},
     -- TSMethod = {},
     -- TSNamespace = {},
     -- TSNone = {},
@@ -151,7 +150,7 @@ return {
     -- TSSymbol = {},
     -- TSType = {},
     -- TSTypeBuiltin = {},
-    -- TSVariable = {},
+    ['@variable'] = {fg = c.fg1},
     ['@variable.builtin'] = {fg = c.fg2},
     ['@tag'] = {fg = c.fg2},
     ['@tag.attribute'] = {fg = c.fg1},
