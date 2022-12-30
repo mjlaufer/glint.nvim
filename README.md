@@ -1,6 +1,13 @@
 # Glint
 
-Glint is a minimal dark theme for Neovim (v0.6 and higher).
+Glint is a minimal dark theme for Neovim (v0.6 and higher). It applies the following syntax highlighting rules:
+
+-   Text and variable names: gray (lighter gray for function names; darker gray for keywords)
+-   Comments: yellow
+-   Numbers and booleans: violet
+-   Operators: magenta
+-   Strings: green
+-   Types: cyan
 
 ![Screen Shot 2022-11-10 at 3 56 57 PM](https://user-images.githubusercontent.com/24204252/201230833-bbf4ddc0-ff59-472a-813d-f0e1d3228c9a.png)
 

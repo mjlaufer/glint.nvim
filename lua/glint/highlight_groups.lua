@@ -58,9 +58,9 @@ return {
 
     ---- :help diff -------------------------------------------
     DiffAdd = {bg = c.greenDiff},
-    DiffChange = {bg = c.blueDiff},
+    DiffChange = {bg = c.cyanDiff},
     DiffDelete = {bg = c.redDiff},
-    DiffText = {bg = c.blueDiffBright},
+    DiffText = {bg = c.cyanDiffBright},
 
     ---- :help spell -------------------------------------------
     SpellBad = {sp = c.redDiag, style = undercurl},
@@ -75,9 +75,9 @@ return {
     String = {fg = c.green},
     Character = {fg = c.green},
     Constant = {fg = c.fg1},
-    Number = {fg = c.magentaBright},
-    Float = {fg = c.magentaBright},
-    Boolean = {fg = c.fg2},
+    Number = {fg = c.blue},
+    Float = {fg = c.blue},
+    Boolean = {fg = c.blue},
     Operator = {fg = c.magenta},
     Statement = {fg = c.fg2}, -- (preferred) any statement
     Conditional = {fg = c.fg2}, -- if, then, else, etc.
@@ -114,7 +114,7 @@ return {
     -- TSAttribute = {},
     -- TSBoolean = {},
     -- TSCharacter = {},
-    -- TSComment = {},
+    ['@comment'] = {fg = c.yellow},
     -- TSConditional = {},
     -- ['@constant'] = {},
     -- TSConstBuiltin = {},
@@ -135,8 +135,6 @@ return {
     -- TSMethod = {},
     -- TSNamespace = {},
     -- TSNone = {},
-    -- TSNumber = {},
-    -- TSOperator = {},
     -- TSParameter = {},
     -- TSParameterReference = {},
     -- TSProperty = {},
@@ -144,9 +142,8 @@ return {
     ['@punctuation.bracket'] = {fg = c.fg0},
     ['@punctuation.special'] = {fg = c.fg2},
     -- TSRepeat = {},
-    -- TSString = {},
-    ['@string.regex'] = {fg = c.blue},
-    ['@string.escape'] = {fg = c.blue},
+    ['@string.regex'] = {fg = c.magenta},
+    ['@string.escape'] = {fg = c.magenta},
     -- TSSymbol = {},
     -- TSType = {},
     -- TSTypeBuiltin = {},
@@ -157,6 +154,7 @@ return {
     ['@tag.delimiter'] = {fg = c.fg1},
     ['@text'] = {fg = c.fg1},
     ['@text.title'] = {fg = c.yellow},
+    ['@text.warning'] = {fg = c.redBright},
     -- TSTitle = {},
     -- TSLiteral = {},
     -- TSURI = {},
@@ -171,7 +169,7 @@ return {
     ---- :h diagnostic-highlight -------------------------------
     DiagnosticError = {fg = c.redDiag},
     DiagnosticWarn = {fg = c.yellowDiag},
-    DiagnosticHint = {fg = c.blueDiag},
+    DiagnosticHint = {fg = c.cyanDiag},
     DiagnosticInfo = {fg = c.fg2},
 
     -- DiagnosticVirtualTextError = {},
@@ -181,7 +179,7 @@ return {
 
     DiagnosticUnderlineError = {style = undercurl, sp = c.redDiag},
     DiagnosticUnderlineWarn = {style = undercurl, sp = c.yellowDiag},
-    DiagnosticUnderlineHint = {style = undercurl, sp = c.blueDiag},
+    DiagnosticUnderlineHint = {style = undercurl, sp = c.cyanDiag},
     DiagnosticUnderlineInfo = {style = undercurl, sp = c.fg2},
 
     -- DiagnosticFloatingError = {},
@@ -201,7 +199,7 @@ return {
 
     LspDiagnosticsDefaultError = {fg = c.redDiag},
     LspDiagnosticsDefaultWarning = {fg = c.yellowDiag},
-    LspDiagnosticsDefaultHint = {fg = c.blueDiag},
+    LspDiagnosticsDefaultHint = {fg = c.cyanDiag},
     LspDiagnosticsDefaultInformation = {fg = c.fg2},
 
     -- LspDiagnosticsVirtualTextError = {},
@@ -224,16 +222,19 @@ return {
     -- LspDiagnosticsSignHint = {},
     -- LspDiagnosticsSignInformation = {},
 
+    ---- Lsp Saga (external plugin) ----------------------------
+    LspSagaDiagnosticHeader = {fg = c.green},
+
     ---- :h telescope (external plugin) ------------------------
     TelescopeBorder = {fg = c.fg3, bg = c.bg1},
     TelescopeNormal = {bg = c.bg1},
-    TelescopePromptTitle = {fg = c.bg1, bg = c.yellow},
+    TelescopePromptTitle = {fg = c.bg1, bg = c.blue},
     TelescopePromptBorder = {fg = c.fg3, bg = c.bg1},
     TelescopePromptCounter = {fg = c.fg1},
     TelescopePromptNormal = {fg = c.fg1},
     TelescopePromptPrefix = {fg = c.fg1},
-    TelescopeResultsTitle = {fg = c.bg1, bg = c.cyan},
-    TelescopePreviewTitle = {fg = c.bg1, bg = c.magenta},
+    TelescopeResultsTitle = {fg = c.bg1, bg = c.magenta},
+    TelescopePreviewTitle = {fg = c.bg1, bg = c.yellow},
     TelescopePreviewBorder = {fg = c.fg3, bg = c.bg1},
     TelescopePreviewNormal = {bg = c.bg1},
     TelescopeSelection = {bg = c.bg3},
@@ -241,22 +242,21 @@ return {
 
     ---- :h gitsigns (external plugin) -------------------------
     GitSignsAdd = {fg = c.green},
-    GitSignsChange = {fg = c.blue},
+    GitSignsChange = {fg = c.cyan},
     GitSignsDelete = {fg = c.red},
     GitSignsCurrentLineBlame = {fg = c.fg3},
 
     ---- :h nvim-tree (external plugin) ------------------------
-    NvimTreeRootFolder = {fg = c.fg2},
-    NvimTreeFolderName = {fg = c.blue},
-    NvimTreeFolderIcon = {fg = c.blue},
-    NvimTreeOpenedFolderName = {fg = c.blueBright},
+    NvimTreeRootFolder = {fg = c.blueBright},
+    NvimTreeFolderName = {fg = c.fg1},
+    NvimTreeOpenedFolderName = {fg = c.fg0},
     NvimTreeExecFile = {fg = c.yellow},
     NvimTreeSpecialFile = {fg = c.magenta},
     NvimTreeGitDirty = {fg = c.red},
     NvimTreeGitNew = {fg = c.green},
     NvimTreeGitRenamed = {fg = c.cyan},
     NvimTreeGitStaged = {fg = c.green},
-    NvimTreeWindowPicker = {fg = c.bg1, bg = c.yellowBright},
+    NvimTreeWindowPicker = {fg = c.bg1, bg = c.blueBright},
 
     ---- nvim-cmp (external plugin) ----------------------------
     CmpItemAbbrMatch = {fg = c.greenBright},
@@ -266,7 +266,7 @@ return {
     CmpItemKindKeyword = {fg = c.fg2},
     CmpItemKindVariable = {fg = c.fg1},
     CmpItemKindValue = {fg = c.fg2},
-    CmpItemKindConstant = {fg = c.magentaBright},
+    CmpItemKindConstant = {fg = c.blue},
     CmpItemKindOperator = {fg = c.magenta},
     CmpItemKindFunction = {fg = c.fg0},
     CmpItemKindMethod = {fg = c.fg0},
@@ -274,12 +274,12 @@ return {
     CmpItemKindClass = {fg = c.cyan},
     CmpItemKindInterface = {fg = c.cyan},
     CmpItemKindStruct = {fg = c.cyan},
-    CmpItemKindFolder = {fg = c.blue},
+    CmpItemKindFolder = {fg = c.fg1},
     CmpItemKindFile = {fg = c.fg1},
 
     ---- neotest (external plugin) -----------------------------
     NeotestAdapterName = {fg = c.fg1},
-    NeotestDir = {fg = c.blue},
+    NeotestDir = {fg = c.fg1},
     NeotestRunning = {fg = c.magentaBright},
     NeotestPassed = {fg = c.green},
     NeotestFailed = {fg = c.red},

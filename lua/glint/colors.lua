@@ -9,25 +9,25 @@ return {
     fg2 = hsluv(0, 0, 60), -- #919191
     fg3 = hsluv(0, 0, 46), -- #6d6d6d
 
-    red = hsluv(12, 80, 60), -- #ef6e6e
-    redBright = hsluv(12, 86, 66), -- #f57c7d
-    yellow = hsluv(52, 80, 68), -- #dfa64e
-    yellowBright = hsluv(52, 76, 74), -- #e4ac59
-    green = hsluv(128, 44, 72), -- #82bf83
-    greenBright = hsluv(128, 40, 78), -- #94cf95
-    cyan = hsluv(190, 50, 70), -- #7db5b4
-    cyanBright = hsluv(190, 44, 76), -- #91c5c4
-    blue = hsluv(248, 70, 66), -- #71a3e3
-    blueBright = hsluv(248, 70, 72), -- #8db3e8
-    magenta = hsluv(340, 64, 70), -- #e492ba
+    red = hsluv(20, 68, 60), -- #e56d51
+    redBright = hsluv(20, 82, 66), -- #f28069
+    yellow = hsluv(60, 70, 72), -- #d1ab60
+    yellowBright = hsluv(60, 66, 78), -- #e3bb70
+    green = hsluv(130, 44, 72), -- #83bf87
+    greenBright = hsluv(130, 40, 78), -- #94cf99
+    cyan = hsluv(210, 50, 68), -- #7baeb9
+    cyanBright = hsluv(210, 44, 74), -- #8ebec9
+    blue = hsluv(270, 70, 66), -- #a197e3
+    blueBright = hsluv(270, 76, 72), -- #b1a9ed
+    magenta = hsluv(340, 60, 70), -- #e194b9
     magentaBright = hsluv(340, 72, 76), -- #eea7c8
 
-    redDiag = hsluv(12, 70, 54), -- #e54a4a
-    yellowDiag = hsluv(52, 70, 60), -- #b68847
-    blueDiag = hsluv(248, 60, 58), -- #628ec6
+    redDiag = hsluv(20, 60, 54), -- #c76550
+    yellowDiag = hsluv(60, 74, 60), -- #ad8c48
+    cyanDiag = hsluv(210, 54, 60), -- #6799a3
 
-    redDiff = hsluv(12, 30, 20), -- #482727
-    greenDiff = hsluv(128, 30, 20), -- #263427
-    blueDiff = hsluv(248, 30, 20), -- #29313d
-    blueDiffBright = hsluv(248, 40, 30), -- #39475d
+    redDiff = hsluv(20, 30, 18), -- #3d2623
+    greenDiff = hsluv(130, 26, 22), -- #2c382c
+    cyanDiff = hsluv(210, 30, 20), -- #283234
+    cyanDiffBright = hsluv(210, 34, 28), -- #364548
 }
