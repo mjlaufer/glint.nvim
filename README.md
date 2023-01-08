@@ -25,6 +25,7 @@ Supported plugins:
 -   [neotest](https://github.com/nvim-neotest/neotest)
 -   [vim-sneak](https://github.com/justinmk/vim-sneak)
 -   [vim-illuminate](https://github.com/RRethy/vim-illuminate)
+-   [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 
 ## Installation
 

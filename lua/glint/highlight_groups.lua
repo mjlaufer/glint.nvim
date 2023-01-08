@@ -320,4 +320,7 @@ return {
     IlluminatedWordText = {bg = c.bg3},
     IlluminatedWordRead = {bg = c.bg3},
     IlluminatedWordWrite = {bg = c.bg3},
+
+    ---- indent-blankline.nvim (external plugin) ---------------
+    IndentBlanklineContextChar = {fg = c.yellow},
 }
