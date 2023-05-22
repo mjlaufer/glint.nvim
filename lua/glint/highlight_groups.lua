@@ -160,6 +160,7 @@ return {
     DiagnosticWarn = {fg = c.yellowDiag},
     DiagnosticHint = {fg = c.cyanDiag},
     DiagnosticInfo = {fg = c.fg2},
+    DiagnosticUnnecessary = {fg = c.fg3},
 
     -- DiagnosticVirtualTextError = {},
     -- DiagnosticVirtualTextWarn = {},
